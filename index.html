@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<!-- Структура страницы: что где находится. Стили — в style.css, поведение — в script.js -->
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Портфолио — Гульчоро</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ШАПКА: чёрная полоса с меню -->
+  <header class="header">
+    <div class="logo">Гульчоро</div>
+    <button class="menu-btn" id="menuBtn" aria-label="Меню">☰</button>
+    <nav class="nav" id="nav">
+      <a href="#about">About me</a>
+      <a href="#skills">Skills</a>
+      <a href="#portfolio">Portfolio</a>
+    </nav>
+    <a href="#contact" class="btn">CONTACT ME</a>
+  </header>
+
+  <!-- ГЕРОЙ: светлая левая часть, чёрная правая с фото -->
+  <section class="hero">
+    <div class="hero-text">
+      <p class="hi">Hi, I am</p>
+      <h1>Гульчоро</h1>
+      <p class="role">Начинающий программист · Java и веб</p>
+      <div class="socials">
+        <a href="mailto:vitaxxho@gmail.com" class="social" aria-label="Почта">@</a>
+        <a href="https://github.com/" class="social" aria-label="GitHub">GH</a>
+      </div>
+    </div>
+    <img src="images/person.jpeg" alt="Фото Гульчоро" class="hero-img">
+  </section>
+
+  <!-- ЧЁРНАЯ ПОЛОСА: короткое представление -->
+  <section class="band">
+    <h2>О СЕБЕ</h2>
+    <p>Мне 17 лет. Я изучаю программирование: уже знаю HTML, CSS, JavaScript и Python, сейчас углубляюсь в Java.</p>
+    <a href="#about" class="readmore">READ MORE</a>
+  </section>
+
+  <!-- ОБО МНЕ -->
+  <section class="section" id="about">
+    <h2 class="boxed">ABOUT ME</h2>
+    <div class="about-grid">
+      <img src="images/about.png" alt="Иллюстрация обо мне">
+      <div>
+        <p>Меня зовут Гульчоро, мне 17 лет. Я изучил HTML, CSS, JavaScript и Python и сейчас изучаю Java.</p>
+        <p>Умею работать в VS Code, IntelliJ и Figma, а мой код хранится на GitHub.</p>
+        <p>В свободное время играю в баскетбол.</p>
+      </div>
+    </div>
+
+    <!-- Три направления: каждое — один блок -->
+    <div class="services">
+      <div class="service">
+        <span class="service-icon">&lt;/&gt;</span>
+        <h3>WEB</h3>
+        <p>Страницы на HTML, CSS и JavaScript.</p>
+      </div>
+      <div class="service">
+        <span class="service-icon">Py</span>
+        <h3>PYTHON</h3>
+        <p>Простые программы и скрипты на Python.</p>
+      </div>
+      <div class="service">
+        <span class="service-icon">J</span>
+        <h3>JAVA</h3>
+        <p>Учебные программы на Java, которые изучаю сейчас.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- НАВЫКИ -->
+  <section class="section" id="skills">
+    <h2 class="boxed">SKILLS</h2>
+
+    <h3 class="subhead">USING NOW:</h3>
+    <div class="badges">
+      <div class="badge"><span style="background:#e34f26">H5</span>HTML5</div>
+      <div class="badge"><span style="background:#1572b6">C3</span>CSS3</div>
+      <div class="badge"><span style="background:#f7df1e;color:#111">JS</span>JavaScript</div>
+      <div class="badge"><span style="background:#3776ab">Py</span>Python</div>
+      <div class="badge"><span style="background:#a259ff">F</span>Figma</div>
+      <div class="badge"><span style="background:#181717">GH</span>GitHub</div>
+      <div class="badge"><span style="background:#007acc">VS</span>VS Code</div>
+      <div class="badge"><span style="background:#000">IJ</span>IntelliJ</div>
+    </div>
+
+    <h3 class="subhead">LEARNING:</h3>
+    <div class="badges">
+      <div class="badge"><span style="background:#f89820">J</span>Java</div>
+      <div class="badge"><span style="background:#dd0031">DE</span>Немецкий</div>
+    </div>
+
+    <h3 class="subhead">OTHER SKILLS:</h3>
+    <div class="badges">
+      <div class="badge"><span style="background:#555">КЫР</span>Кыргызский</div>
+      <div class="badge"><span style="background:#555">РУС</span>Русский</div>
+      <div class="badge"><span style="background:#555">ENG</span>Английский</div>
+    </div>
+  </section>
+
+  <!-- ЧЁРНАЯ ПОЛОСА перед контактами -->
+  <div class="band-line">И ещё много проектов впереди!</div>
+
+  <!-- КОНТАКТЫ: форма -->
+  <section class="section" id="contact">
+    <h2 class="boxed">CONTACT</h2>
+    <p class="contact-text">Напишите мне, если хотите обсудить проект или просто поздороваться.</p>
+    <form class="form" action="mailto:vitaxxho@gmail.com" method="post" enctype="text/plain">
+      <input type="text" name="name" placeholder="ВАШЕ ИМЯ*" required>
+      <input type="email" name="email" placeholder="ВАША ПОЧТА*" required>
+      <input type="tel" name="phone" placeholder="ТЕЛЕФОН">
+      <textarea name="message" placeholder="СООБЩЕНИЕ*" required></textarea>
+      <button type="submit" class="submit">SUBMIT</button>
+    </form>
+    <p class="contact-info">Телефон: 0555 999 227 · vitaxxho@gmail.com</p>
+  </section>
+
+  <footer class="footer">
+    <a href="#">↑ BACK TO TOP</a>
+    <p>@2026 Гульчоро. All Rights Reserved.</p>
+  </footer>
+
+  <!-- Кнопка «наверх» -->
+  <button class="to-top" id="toTop" aria-label="Наверх">↑</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
